@@ -8,7 +8,7 @@ To write a program to design RollerBall and train the Rollerbal by Reinforcement
 
 ### Installation Required 
 ```
-1.Check sytem have python 3.10.0  ( if any higher version then uninstall and install python3.10.0)
+1. Check system have python 3.10.0  ( if any higher version then uninstall and install python3.10.0)
 2. Open commandprompt and Create and activate Python virtualenv by
      python -m venv venv 
      venv\Scripts\activate
@@ -17,10 +17,10 @@ To write a program to design RollerBall and train the Rollerbal by Reinforcement
 4. install ML agents by 
    pip install mlagents==0.28.0
 5. install torch by 
-  pip install torch torchvision torchaudio
+   pip install torch torchvision torchaudio
 6. Check mlagent version and check all the main options that you can use when launching the Python trainer by 
-pip show mlagents 
-mlagents-learn --help
+   pip show mlagents 
+   mlagents-learn --help
 ```
 ### PROCEDURE:
 ```
@@ -42,14 +42,14 @@ mlagents-learn --help
     Vector Observation: 8 (4 for agent pos + 3 for target pos + 1 for velocity), 
     Action Space: Continuous (2)
 12. Add the Decision requestor
- Addcomponent->ML Agents -> Decision Requestor ->set decision period 5 
+    Addcomponent->ML Agents -> Decision Requestor ->set decision period 5 
 13. In command prompt, Run the command to start ML agents to learn the Unity 
       mlagents-learn "C:\Users\umara\rollerball-udemy\Config\Rollerball.yaml" --run-id=RollerBall_002 --train --no-graphics
    Note "C:\Users\umara\rollerball-udemy\Config\Rollerball.yaml" change it by your file path where yaml file is located
 14. In unity start play button and see the output of roller ball
 15.Run tensor board in command prompt
-tensorboard --logdir results
-16 Get the results by running the localhost on specific port ( shown in tensorboard)
+   tensorboard --logdir results
+16. Get the results by running the localhost on specific port ( shown in tensorboard)
 ```  
 ### PROGRAM:
 ```
